@@ -1,13 +1,237 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: linear-gradient(
+    to top,
+    #1e3c72 0%,
+    #1e3c72 1%,
+    #2a5298 100%
+  );
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#div1,
+#displayBox,
+.App {
+  height: 90%;
+}
+
+input {
+  margin-left: 10px;
+}
+
+.top_btn_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btnConvert {
+  width: 200px;
+  height: 30px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #03a9f4;
+  border: none;
+}
+#box {
+  height: 100%;
+  background-color: #fff;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#textBox {
+  position: absolute;
+  left: 0;
+  top: 11%;
+  height: 80px;
+  width: 100%;
+  word-break: break-word;
+  background-color: #ffff;
+}
+
+#imgHolder {
+  position: absolute;
+  top: 20%;
+  height: 58%;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  padding-left: 5px;
+}
+
+#dvPreview {
+  background-color: rgb(238, 238, 238);
+  height: 40%;
+  width: 70%;
+}
+
+#img {
+  height: 100%;
+  width: 100%;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: "Select Image";
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid rgb(0, 193, 214);
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 400;
+  font-size: 10pt;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #41b0ff);
+}
+
+.template_img {
+  height: 100px !important;
+  width: 100px !important;
+  object-fit: contain;
+}
+
+#drpdwn {
+  height: 30px;
+  width: 80%;
+}
+
+#div2 {
+  height: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  /* background-color: aqua; */
+  position: absolute;
+  left: 0;
+  bottom: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features {
+  display: none;
+  width: 80%;
+}
+#button_container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.featureBtn {
+  width: 17% !important;
+  height: 50px;
+  background-color: #0000009e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ip_text {
+  height: 40px;
+  color: #fff;
+  width: 80%;
+  padding-left: 5px;
+  outline: none;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 0.5px solid #fff;
+}
+
+input[type="range"] {
+  width: 65%;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  height: 4px;
+  background-color: #e3e3e3;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background 0.3s ease-in-out;
+}
+
+.icon {
+  color: #fff;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+#gallery_img_holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  justify-items: center;
+  grid-gap: 20px;
+  overflow: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#gallery {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  /* overflow-y: hidden; */
+ 
+  transition: 0.5s;
+  overflow-x:scroll;
+}
+
+#gallery_button {
+  position: fixed;
+  bottom: 20%;
+  right: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgb(159 159 159);
+}
+
+.img_div {
+  border: 0.1px solid #ffff;
+}
+
+.suf{
+  color: #fff;
 }
