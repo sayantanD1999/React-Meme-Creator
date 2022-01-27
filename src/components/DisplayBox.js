@@ -44,33 +44,38 @@ function DisplayBox() {
     width: imgWidth,
     transform: x,
   };
-  const cross = {
-    marginTop: "20px",
-  };
+  // const cross = {
+  //   marginTop: "20px",
+  // };
 
-  const customStyle = {
-    display: "flex",
-    justifyContent: "space-around",
-  };
+  // const customStyle = {
+  //   display: "flex",
+  //   justifyContent: "space-around",
+  // };
+
+  function downloadURI(uri, name) {
+    var link = document.createElement("a");
+
+    link.download = name;
+    link.href = uri;
+    document.body.appendChild(link);
+    link.click();
+  }
 
   const download = () => {
     html2canvas(document.getElementById("box")).then(function (canvas) {
-      // var c = document.querySelector("#meme canvas");
-      // console.log(c);
+      // document.getElementById("meme").appendChild(canvas);
 
-      // let x = document.querySelector("canvas");
-      // x.parentNode.removeChild(x);
-
-      document.getElementById("meme").appendChild(canvas);
-
+      var myImage = canvas.toDataURL();
+      downloadURI(myImage, "myMeme.png");
       console.log(canvas);
-      document.getElementById("preview").style.width = "100%";
+      // document.getElementById("preview").style.width = "100%";
     });
   };
 
-  const closePreview = () => {
-    document.getElementById("preview").style.width = "0%";
-  };
+  // const closePreview = () => {
+  //   document.getElementById("preview").style.width = "0%";
+  // };
 
   window.onload = function () {
     var fileUpload = document.getElementById("fileupload");
@@ -117,7 +122,7 @@ function DisplayBox() {
         />
         <input
           type="button"
-          value="Convert to img"
+          value="Download"
           onClick={download}
           id="btnConvert"
         />
@@ -128,7 +133,7 @@ function DisplayBox() {
         <h3 style={customStyleText}>{text}</h3>
         <div id="dvPreview" style={customStyleImg}></div>
       </div>
-      <div id="preview">
+      {/* <div id="preview">
         <div style={customStyle}>
           <h3 style={{ color: "#ffff" }}>Long Press and download your meme</h3>
           <span className="icon" style={cross} onClick={closePreview}>
@@ -137,7 +142,7 @@ function DisplayBox() {
         </div>{" "}
         <hr />
         <div id="meme"></div>
-      </div>
+      </div> */}
     </div>
   );
 }
