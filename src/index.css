@@ -10,6 +10,13 @@ body {
   );
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Roboto&display=swap");
+
+h1,
+h2,
+h3 {
+  font-family: "Dosis", sans-serif;
+}
 #div1,
 #displayBox,
 .App {
@@ -35,7 +42,7 @@ input {
   border: none;
 }
 #box {
-  height: 100%;
+  height: 65vh;
   background-color: #fff;
   width: auto;
   display: flex;
@@ -44,35 +51,10 @@ input {
   align-items: center;
 }
 
-#textBox {
-  position: absolute;
-  left: 0;
-  top: 11%;
-  height: 80px;
-  width: 100%;
-  word-break: break-word;
-  background-color: #ffff;
-}
-
-#imgHolder {
-  position: absolute;
-  top: 20%;
-  height: 58%;
-  width: 100%;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-h3 {
-  padding-left: 5px;
-}
-
 #dvPreview {
   background-color: rgb(238, 238, 238);
-  height: 40%;
-  width: 70%;
+  height: 50%;
+  width: 60%;
 }
 
 #img {
@@ -211,9 +193,9 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.9);
   /* overflow-y: hidden; */
- 
+
   transition: 0.5s;
-  overflow-x:scroll;
+  overflow-x: scroll;
 }
 
 #gallery_button {
@@ -232,6 +214,27 @@ input[type="range"]::-webkit-slider-thumb {
   border: 0.1px solid #ffff;
 }
 
-.suf{
+.suf {
   color: #fff;
+}
+#preview {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  /* overflow-y: hidden; */
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+  overflow-x: scroll;
+}
+
+#meme {
+  width: 100%;
+  margin: auto;
+  margin-left: 5%;
 }

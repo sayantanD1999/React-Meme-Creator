@@ -37,7 +37,7 @@ function ImgSize() {
           id=""
           min={50}
           step={1}
-          max={100}
+          max={80}
           value={height}
           style={ip}
           onChange={(e) => {
@@ -53,7 +53,7 @@ function ImgSize() {
           id=""
           min={50}
           step={1}
-          max={100}
+          max={90}
           value={width}
           style={ip}
           onChange={(e) => {

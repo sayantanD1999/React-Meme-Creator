@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
-// import html2canvas from "html2canvas";
-import domtoimage from "dom-to-image";
-import saveAs from "file-saver";
+import html2canvas from "html2canvas";
 
 function DisplayBox() {
   const [src, setSrc] = useState("");
-
   const text = useSelector((state) => state.text);
   const textColor = useSelector((state) => state.textColor);
   const fontSize = useSelector((state) => state.fontSize);
@@ -30,8 +27,6 @@ function DisplayBox() {
   const imgHeight = useSelector((state) => state.height);
   const imgWidth = useSelector((state) => state.width);
   const rotate = useSelector((state) => state.rotate);
-  // const deg =   useSelector((state) => state.deg);
-  // const axis =   useSelector((state) => state.axis);
 
   var x = "rotate(" + rotate + "deg)";
 
@@ -49,27 +44,33 @@ function DisplayBox() {
     width: imgWidth,
     transform: x,
   };
+  const cross = {
+    marginTop: "20px",
+  };
+
+  const customStyle = {
+    display: "flex",
+    justifyContent: "space-around",
+  };
 
   const download = () => {
-    domtoimage.toBlob(document.getElementById("box")).then(function (blob) {
-      window.saveAs(blob, "mymeme.png");
+    html2canvas(document.getElementById("box")).then(function (canvas) {
+      // var c = document.querySelector("#meme canvas");
+      // console.log(c);
+
+      // let x = document.querySelector("canvas");
+      // x.parentNode.removeChild(x);
+
+      document.getElementById("meme").appendChild(canvas);
+
+      console.log(canvas);
+      document.getElementById("preview").style.width = "100%";
     });
   };
 
-  // const download = () => {
-  //   html2canvas(document.getElementById("box"), {
-  //     allowTaint: true,
-  //     useCORS: true,
-  //   }).then(function (canvas) {
-  //     var anchorTag = document.createElement("a");
-  //     document.body.appendChild(anchorTag);
-  //     // document.getElementById("txt").style.marginTop = 300 + "px";
-  //     anchorTag.download = "filename.jpg";
-  //     anchorTag.href = canvas.toDataURL();
-  //     anchorTag.target = "_blank";
-  //     anchorTag.click();
-  //   });
-  // };
+  const closePreview = () => {
+    document.getElementById("preview").style.width = "0%";
+  };
 
   window.onload = function () {
     var fileUpload = document.getElementById("fileupload");
@@ -116,19 +117,26 @@ function DisplayBox() {
         />
         <input
           type="button"
-          value="Download"
+          value="Convert to img"
           onClick={download}
           id="btnConvert"
         />
       </div>
       <br />
+
       <div id="box">
-        <div id="textBox">
-          <h3 style={customStyleText}>{text}</h3>
-        </div>
-        <div id="imgHolder">
-          <div id="dvPreview" style={customStyleImg}></div>
-        </div>
+        <h3 style={customStyleText}>{text}</h3>
+        <div id="dvPreview" style={customStyleImg}></div>
+      </div>
+      <div id="preview">
+        <div style={customStyle}>
+          <h3 style={{ color: "#ffff" }}>Long Press and download your meme</h3>
+          <span className="icon" style={cross} onClick={closePreview}>
+            &times;
+          </span>
+        </div>{" "}
+        <hr />
+        <div id="meme"></div>
       </div>
     </div>
   );
