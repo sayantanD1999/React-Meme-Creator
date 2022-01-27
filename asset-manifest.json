@@ -1,15 +1,32 @@
 {
   "files": {
-    "main.css": "/React-Meme-Creator/static/css/main.62b3d309.css",
-    "main.js": "/React-Meme-Creator/static/js/main.56cfd469.js",
+    "main.css": "/React-Meme-Creator/static/css/main.08cf8d16.css",
+    "main.js": "/React-Meme-Creator/static/js/main.da9c70c1.js",
     "static/js/787.cfd8f164.chunk.js": "/React-Meme-Creator/static/js/787.cfd8f164.chunk.js",
+    "static/media/img7.jpg": "/React-Meme-Creator/static/media/img7.19b961bf646e6c137553.jpg",
+    "static/media/img1.jpg": "/React-Meme-Creator/static/media/img1.9ccc41c6dc117f08dc84.jpg",
+    "static/media/img18.jpg": "/React-Meme-Creator/static/media/img18.d74d595373a81078bf8c.jpg",
+    "static/media/img20.jpg": "/React-Meme-Creator/static/media/img20.19cc0d7fb182bb7d16af.jpg",
+    "static/media/img17.jpg": "/React-Meme-Creator/static/media/img17.5143bbf6c1cd38acfa44.jpg",
+    "static/media/img8.jpeg": "/React-Meme-Creator/static/media/img8.f40adb34190d88d3a5bf.jpeg",
+    "static/media/img4.jpg": "/React-Meme-Creator/static/media/img4.4bb99869fa49f1739fe3.jpg",
+    "static/media/img10.jpg": "/React-Meme-Creator/static/media/img10.684dd227d4802e618d10.jpg",
+    "static/media/img16.jpg": "/React-Meme-Creator/static/media/img16.04fceccdbdccb25af1ef.jpg",
+    "static/media/img5.jpg": "/React-Meme-Creator/static/media/img5.06dc2a27a3a224be19b8.jpg",
+    "static/media/img2.jpg": "/React-Meme-Creator/static/media/img2.9cdbc1b98a6162126b28.jpg",
+    "static/media/img3.jpg": "/React-Meme-Creator/static/media/img3.161eb4c9686025c7e13c.jpg",
+    "static/media/img6.jpg": "/React-Meme-Creator/static/media/img6.f1d9df3afcd0fc482ea2.jpg",
+    "static/media/img9.jpg": "/React-Meme-Creator/static/media/img9.29678d0e91e5e27c8c04.jpg",
+    "static/media/img11.jpg": "/React-Meme-Creator/static/media/img11.092503d444348e63cf4f.jpg",
+    "static/media/img14.jpg": "/React-Meme-Creator/static/media/img14.c35df127ee7b274c0772.jpg",
+    "static/media/img15.jpg": "/React-Meme-Creator/static/media/img15.2e9053dc9e5c6d977ae5.jpg",
     "index.html": "/React-Meme-Creator/index.html",
-    "main.62b3d309.css.map": "/React-Meme-Creator/static/css/main.62b3d309.css.map",
-    "main.56cfd469.js.map": "/React-Meme-Creator/static/js/main.56cfd469.js.map",
+    "main.08cf8d16.css.map": "/React-Meme-Creator/static/css/main.08cf8d16.css.map",
+    "main.da9c70c1.js.map": "/React-Meme-Creator/static/js/main.da9c70c1.js.map",
     "787.cfd8f164.chunk.js.map": "/React-Meme-Creator/static/js/787.cfd8f164.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.62b3d309.css",
-    "static/js/main.56cfd469.js"
+    "static/css/main.08cf8d16.css",
+    "static/js/main.da9c70c1.js"
   ]
 }
