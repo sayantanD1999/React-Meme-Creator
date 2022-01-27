@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Meme-Creator/static/css/main.08cf8d16.css",
-    "main.js": "/React-Meme-Creator/static/js/main.da9c70c1.js",
+    "main.css": "/React-Meme-Creator/static/css/main.e233753c.css",
+    "main.js": "/React-Meme-Creator/static/js/main.c9a7fcfb.js",
     "static/js/787.cfd8f164.chunk.js": "/React-Meme-Creator/static/js/787.cfd8f164.chunk.js",
     "static/media/img7.jpg": "/React-Meme-Creator/static/media/img7.19b961bf646e6c137553.jpg",
     "static/media/img1.jpg": "/React-Meme-Creator/static/media/img1.9ccc41c6dc117f08dc84.jpg",
@@ -21,12 +21,12 @@
     "static/media/img14.jpg": "/React-Meme-Creator/static/media/img14.c35df127ee7b274c0772.jpg",
     "static/media/img15.jpg": "/React-Meme-Creator/static/media/img15.2e9053dc9e5c6d977ae5.jpg",
     "index.html": "/React-Meme-Creator/index.html",
-    "main.08cf8d16.css.map": "/React-Meme-Creator/static/css/main.08cf8d16.css.map",
-    "main.da9c70c1.js.map": "/React-Meme-Creator/static/js/main.da9c70c1.js.map",
+    "main.e233753c.css.map": "/React-Meme-Creator/static/css/main.e233753c.css.map",
+    "main.c9a7fcfb.js.map": "/React-Meme-Creator/static/js/main.c9a7fcfb.js.map",
     "787.cfd8f164.chunk.js.map": "/React-Meme-Creator/static/js/787.cfd8f164.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.08cf8d16.css",
-    "static/js/main.da9c70c1.js"
+    "static/css/main.e233753c.css",
+    "static/js/main.c9a7fcfb.js"
   ]
 }
