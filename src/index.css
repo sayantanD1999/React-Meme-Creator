@@ -6,7 +6,7 @@ body {
     to top,
     #1e3c72 0%,
     #1e3c72 1%,
-    #2a5298 100%
+    #141515 100%
   );
 }
 
@@ -38,7 +38,7 @@ input {
   height: 30px;
   border-radius: 3px;
   color: #fff;
-  background-color: #03a9f4;
+  background-color: #6d6d6d;
   border: none;
   cursor: pointer;
 }
@@ -78,7 +78,6 @@ input {
   outline: none;
   white-space: nowrap;
   cursor: pointer;
-  text-shadow: 1px 1px #fff;
   font-weight: 400;
   font-size: 10pt;
 }
@@ -139,11 +138,12 @@ input {
   height: 40px;
   color: #fff;
   width: 80%;
-  padding-left: 5px;
+  padding-left: 10px;
   outline: none;
   border-radius: 4px;
-  background-color: transparent;
+  background-color:  #141515;
   border: 0.5px solid #fff;
+  z-index: 1;
 }
 
 input[type="range"] {
