@@ -131,18 +131,9 @@ function DisplayBox() {
 
       <div id="box">
         <h3 style={customStyleText}>{text}</h3>
-        <div id="dvPreview" style={customStyleImg}></div>
+        <div id="dvPreview" style={customStyleImg}>
+        </div>
       </div>
-      {/* <div id="preview">
-        <div style={customStyle}>
-          <h3 style={{ color: "#ffff" }}>Long Press and download your meme</h3>
-          <span className="icon" style={cross} onClick={closePreview}>
-            &times;
-          </span>
-        </div>{" "}
-        <hr />
-        <div id="meme"></div>
-      </div> */}
     </div>
   );
 }

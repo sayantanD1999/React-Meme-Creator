@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 
 function Text() {
   const dispatch = useDispatch();
-  const [txt, setTxt] = useState("Sample Text");
+  const [txt, setTxt] = useState("Create a meme");
 
   useEffect(() => {
     console.log(txt);
